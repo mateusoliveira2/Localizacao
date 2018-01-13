@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">>
+
+
+    <TextView
+        android:id="@+id/txtLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="19dp"
+        android:text="latitude" />
+
+    <TextView
+        android:id="@+id/txtLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtLat"
+        android:layout_below="@+id/txtLat"
+        android:layout_marginTop="13dp"
+        android:text="longitude" />
+
+    <TextView
+        android:id="@+id/txtCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtLong"
+        android:layout_below="@+id/txtPais"
+        android:layout_marginTop="86dp"
+        android:text="cidade" />
+
+    <TextView
+        android:id="@+id/txtEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtPais"
+        android:layout_below="@+id/txtLong"
+        android:layout_marginTop="27dp"
+        android:text="estado" />
+
+    <TextView
+        android:id="@+id/txtPais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtCidade"
+        android:layout_below="@+id/txtLong"
+        android:layout_marginTop="66dp"
+        android:text="pais" />
+
+    <TextView
+        android:id="@+id/txtDistancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtLong"
+        android:layout_below="@+id/txtCidade"
+        android:layout_marginTop="59dp"
+        android:text="distancia" />
+</RelativeLayout>
